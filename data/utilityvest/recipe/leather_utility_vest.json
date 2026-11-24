@@ -1,0 +1,18 @@
+{
+  "category": "misc",
+  "key": {
+    "a": "minecraft:leather",
+    "b": "minecraft:chest",
+    "c": "minecraft:leather"
+  },
+  "pattern": [
+    "a a",
+    "aba",
+    "ccc"
+  ],
+  "result": {
+    "count": 1,
+    "id": "utilityvest:leather_utility_vest"
+  },
+  "type": "minecraft:crafting_shaped"
+}

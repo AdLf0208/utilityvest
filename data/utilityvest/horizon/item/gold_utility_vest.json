@@ -1,0 +1,7 @@
+{
+  "components": {
+    "minecraft:item_model": "utilityvest:gold_utility_vest"
+  },
+  "max_stack_size": 1,
+  "template": "minecraft:leather_chestplate"
+}

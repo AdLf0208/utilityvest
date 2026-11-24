@@ -1,0 +1,17 @@
+{
+  "category": "misc",
+  "key": {
+    "a": "minecraft:iron_ingot",
+    "b": "utilityvest:leather_utility_vest"
+  },
+  "pattern": [
+    " a ",
+    "aba",
+    " a "
+  ],
+  "result": {
+    "count": 1,
+    "id": "utilityvest:iron_utility_vest"
+  },
+  "type": "minecraft:crafting_shaped"
+}

@@ -1,0 +1,28 @@
+# Utility Vest for Horizon — one flat SDK package (mod API 0.2).
+#
+# The first slice carries the five wearable vest tiers (leather, iron, gold, diamond, netherite)
+# with their models, textures, lang, five shaped recipes, advancements and the `utility_vest`
+# item tag. The native half registers each tier's item container (1..5 banks of nine slots) and
+# exposes the vest's server actions as `/utilityvest ...` commands: `wear`/`remove` move it into
+# and out of the vanilla body equipment slot, `store`/`take` move items through its container,
+# and `save`/`load`/`restock` port the upstream hotbar and restock behaviours.
+#
+# Upstream's Curios body slot, keybinds, radial menu, filter menu and the custom `upgrade` recipe
+# serializer are not expressible at this pin; the deviations are recorded in notes.md.
+#
+# Licence: LGPL-3.0-only (from META-INF/neoforge.mods.toml and the upstream repository), rank 1
+# copyleft — publishable under the same licence with the complete source, which travels in the
+# package. Credit: Satherov <https://github.com/Satherov/Utility-Vest>.
+id = "utilityvest"
+name = "Utility Vest"
+version = "0.1.0"
+description = """Utility Vest for Horizon: five wearable vest tiers whose nine-slot banks act as a portable item container, with hotbar save/load, tool swap-style storage and restock. Slice 1 carries the five items, their recipes and tags, registers their item containers, and exposes the wear/store/take/save/load/restock actions through `/utilityvest` commands (upstream's keybinds are client-only at this pin)."""
+authors = ["Satherov", "AdLf0208"]
+api = "0.2"
+side = "both"
+capabilities = ["registries"]
+
+[native]
+game = "26.3"
+horizon = "0a875da91dbb0fdcb7ba8c42c11341aa229af51a"
+mixins = "e59da9094f0c2fdda6c627fe9eff22dec6a906f0"

@@ -1,0 +1,12 @@
+[package]
+name = "utilityvest"
+version = "0.1.0"
+edition = "2024"
+license = "LGPL-3.0-only"
+description = "Utility Vest for Horizon: a wearable nine-slot-bank item container with hotbar save/load, swap and restock"
+publish = false
+
+[dependencies]
+# The pinned SDK's API crate, fetched into .horizon/sdk/ by any `cargo horizon-mod` command (the
+# launcher builds against its own copy of the same build). SDK-only: R9 refuses any other.
+horizon-mod-api = { path = ".horizon/sdk/api/crates/horizon-mod-api" }
